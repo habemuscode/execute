@@ -9,10 +9,10 @@ const exec = require('execute')
 
 async function test (mensaje) {
   try {
-		await exec(`echo ${mensaje}`)
-	} catch (error) {
-		console.error('Error: ', error)
-	}
+    await exec(`echo ${mensaje}`)
+  } catch (error) {
+    console.error('Error: ', error)
+  }
 }
 
 test('¡Hola Mundo!')
