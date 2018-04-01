@@ -8,15 +8,14 @@ Versión ES7(async-await) de `child_process.exec` de NodeJS
 const exec = require('execute')
 
 async function test (mensaje) {
-	try {
+  try {
 		await exec(`echo ${mensaje}`)
-		console.log('Acierto')
 	} catch (error) {
 		console.error('Error: ', error)
 	}
 }
 
-test('Funciona correctamente')
+test('¡Hola Mundo!')
 ```
 Opcionalmente se le puede pasar un objeto con opciones que son las mismas que `child_process.exec`
 
